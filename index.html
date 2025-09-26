@@ -1,118 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My First Webpage</title>
-
-
-    <style> body { background-color: #b5dcff; font-family: Arial, sans-serif;}
-        h1 { color: darkgreen;}
-    </style>
-
-    
-    <link rel="stylesheet" href="style.css">
-
-
-    <link rel="icon" type="image/jpg" href="favicon.jpg">
+  <meta charset="UTF-8">
+  <title>Assignment 3</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <header class="navbar">
+    <div class="logo">MyLogo</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <h1 id="main-heading">Sofiya Akhmadishina</h1>
-    <h2>Group IT-2407</h2>
-    <h3>I like playing computer games</h3>
+  <section class="card-row">
+    <div class="card">
+      <img src="https://i.pinimg.com/originals/aa/4b/86/aa4b86b44c1069317bed30059d91aaae.gif" alt="Card 1">
+      <h3>Card One</h3>
+      <p>Hello, World!</p>
+      <button>Read More</button>
+    </div>
+    <div class="card">
+      <img src="https://static.wikia.nocookie.net/d51a4d91-c1a7-4533-bd0d-0d6d930427ef/scale-to-width/755" alt="Card 2">
+      <h3>Card Two</h3>
+      <p>Lorem ispum</p>
+      <button>Read More</button>
+    </div>
+    <div class="card">
+      <img src="https://static.wikia.nocookie.net/ca84a4d9-559f-4f3d-af49-f105a335bb76" alt="Card 3">
+      <h3>Card Three</h3>
+      <p>Hello, Lorem ispum</p>
+      <button>Read More</button>
+    </div>
+  </section>
 
-    <p style="color: blue;">My name is Akhmadishina Sofiya. I am a student at Astana IT University. My Group is IT-2407</p>
+  <section class="grid-layout">
+    <header class="grid-header">Header</header>
+    <aside class="grid-sidebar">Sidebar</aside>
+    <main class="grid-main">Main Content</main>
+    <footer class="grid-footer">Footer</footer>
+  </section>
 
-    <h3>My Hobbies</h3>
-    <ol>
-        <li class="highlight">Computer games</li>
-        <li>Drums</li> 
-        <li>Lorem ipsum</li>
-    </ol>
 
-    <h3>Favorite Websites</h3>
-    <ul>
-        <li><a href="https://ru.pinterest.com">Pinterest</a></li>
-        <li><a href="https://www.youtube.com">YouTube</a></li>
-    </ul>
+  <section class="gallery">
+    <div class="gallery-item"><img src="https://i.pinimg.com/736x/a3/68/49/a3684935635d03251dbbf84c6fc46108.jpg" alt="1"><span>Caption 1</span></div>
+    <div class="gallery-item"><img src="https://i.pinimg.com/1200x/76/57/24/765724de07b1adad4cb1191eec7e8cd2.jpg" alt="2"><span>Caption 2</span></div>
+    <div class="gallery-item"><img src="https://i.pinimg.com/736x/7d/b9/3d/7db93dbe7d2de085d247816ea79a7c92.jpg" alt="3"><span>Caption 3</span></div>
+    <div class="gallery-item"><img src="https://i.pinimg.com/1200x/a8/d4/b5/a8d4b5613eebf5ac6f8807eb4eeb5a80.jpg" alt="4"><span>Caption 4</span></div>
+    <div class="gallery-item"><img src="https://i.pinimg.com/736x/8a/b5/d7/8ab5d7675554a338fe5a25c734a3b25e.jpg" alt="5"><span>Caption 5</span></div>
+    <div class="gallery-item"><img src="https://i.pinimg.com/1200x/ce/2d/57/ce2d57861da63090769a479d2f9bfcbe.jpg" alt="6"><span>Caption 6</span></div>
+    <div class="gallery-item"><img src="https://i.pinimg.com/736x/fa/71/ba/fa71ba7486c9e901cec5d22a46b27605.jpg" alt="7"><span>Caption 7</span></div>
+    <div class="gallery-item"><img src="https://i.pinimg.com/1200x/2b/d9/d7/2bd9d77f319d1e5fee827f50517ee04f.jpg    " alt="8"><span>Caption 8</span></div>
+    <div class="gallery-item"><img src="https://i.pinimg.com/736x/e2/78/6f/e2786f3a6932ec738a3abca24afb4842.jpg" alt="9"><span>Caption 9</span></div>
+  </section>
 
-    <h3>My Photo</h3>
-    <img src="image.jpg" alt="My Photo" width="200">
+  <section class="portfolio">
+    <header class="portfolio-header">
+      <div class="logo">Portfolio</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="portfolio-grid">
+      <div class="projects">
+        <div class="project-card">
+          <h3>Project 1</h3>
+          <p>A short description of the project</p>
+          <button>View</button>
+        </div>
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <p>Another description here</p>
+          <button>View</button>
+        </div>
+      </div>
+      <aside class="portfolio-sidebar">
+        <h3>About Me</h3>
+        <p>Some info about me</p>
+      </aside>
+    </div>
 
-    <p>Visit my favorite sites:</p>
-    <a href="https://ru.pinterest.com">Pinterest</a> |
-    <a href="https://www.youtube.com">Youtube</a>
-
-    <h3>Button</h3>
-    <button>Click Me</button>
-
-    <h3>My Weekly Schedule</h3>
-    <table border="1">
-        <tr>
-            <th>Subject</th>
-            <th>Day</th>
-            <th>Time</th>
-        </tr>
-        <tr>
-            <td>Analytic Geometry</td>
-            <td>Monday</td>
-            <td>13:00</td>
-        </tr>
-        <tr>
-            <td>Kazakh language</td>
-            <td>Wednesday</td>
-            <td>14:00</td>
-        </tr>
-        <tr>
-            <td>WEB</td>
-            <td>Thursday</td>
-            <td>14:00</td>
-        </tr>
-    </table>
-
-    <h3>Two Column Layout</h3>
-    <table border="1">
-        <tr>
-            <td>
-                <h3>Menu</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </td>
-            <td>
-                <h2>Main Content</h2>
-                <p>Hello World</p>
-                <p>Lorem ipsum</p>
-            </td>
-        </tr>
-    </table>
-
-    <h3>My Mood Today</h3>
-    <p class="highlight">Today I feel &#128513; &#128557; &#128128;</p>
-
-    <form>
-        Name: <input type="text" name="name"><br><br>
-        Email: <input type="email" name="email"><br><br>
-        Favorite Color: <input type="color" name="color"><br><br>
-        <input type="submit" value="Submit">
-    </form>
-
-    <div class="header">Header Section</div>
-    <div class="main">Main Content</div>
-    <div class="footer">Footer Section</div>
-
-    <div class="static">Static Position</div>
-    <div class="relative">Relative Position</div>
-    <div class="absolute">Absolute Position</div>
-    
-    <h3>Float Layout</h3>
-    <div class="left">Left Box</div>
-    <div class="right">Right Box</div>
-    <div class="clear">This clears floats</div>
+    <footer class="portfolio-footer">© 2025 My Page</footer>
+  </section>
 
 </body>
 </html>
