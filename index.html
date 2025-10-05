@@ -2,97 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Assignment 3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sofiya's Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="navbar">
-    <div class="logo">MyLogo</div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+
+  <div class="site-nav">
+    <a href="index.html">Main</a>
+    <a href="typography.html">Typography</a>
+    <a href="layout.html">Layout</a>
+    <a href="bootstrap-grid.html">Grid</a>
+    <a href="navbar.html">Navbar</a>
+  </div>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Sofiya's Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Welcome</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
       </ul>
-    </nav>
-  </header>
-
-  <section class="card-row">
-    <div class="card">
-      <img src="https://i.pinimg.com/originals/aa/4b/86/aa4b86b44c1069317bed30059d91aaae.gif" alt="Card 1">
-      <h3>Card One</h3>
-      <p>Hello, World!</p>
-      <button>Read More</button>
     </div>
-    <div class="card">
-      <img src="https://static.wikia.nocookie.net/d51a4d91-c1a7-4533-bd0d-0d6d930427ef/scale-to-width/755" alt="Card 2">
-      <h3>Card Two</h3>
-      <p>Lorem ispum</p>
-      <button>Read More</button>
-    </div>
-    <div class="card">
-      <img src="https://static.wikia.nocookie.net/ca84a4d9-559f-4f3d-af49-f105a335bb76" alt="Card 3">
-      <h3>Card Three</h3>
-      <p>Hello, Lorem ispum</p>
-      <button>Read More</button>
-    </div>
-  </section>
-
-  <section class="grid-layout">
-    <header class="grid-header">Header</header>
-    <aside class="grid-sidebar">Sidebar</aside>
-    <main class="grid-main">Main Content</main>
-    <footer class="grid-footer">Footer</footer>
-  </section>
+  </div>
+</nav>
 
 
-  <section class="gallery">
-    <div class="gallery-item"><img src="https://i.pinimg.com/736x/a3/68/49/a3684935635d03251dbbf84c6fc46108.jpg" alt="1"><span>Caption 1</span></div>
-    <div class="gallery-item"><img src="https://i.pinimg.com/1200x/76/57/24/765724de07b1adad4cb1191eec7e8cd2.jpg" alt="2"><span>Caption 2</span></div>
-    <div class="gallery-item"><img src="https://i.pinimg.com/736x/7d/b9/3d/7db93dbe7d2de085d247816ea79a7c92.jpg" alt="3"><span>Caption 3</span></div>
-    <div class="gallery-item"><img src="https://i.pinimg.com/1200x/a8/d4/b5/a8d4b5613eebf5ac6f8807eb4eeb5a80.jpg" alt="4"><span>Caption 4</span></div>
-    <div class="gallery-item"><img src="https://i.pinimg.com/736x/8a/b5/d7/8ab5d7675554a338fe5a25c734a3b25e.jpg" alt="5"><span>Caption 5</span></div>
-    <div class="gallery-item"><img src="https://i.pinimg.com/1200x/ce/2d/57/ce2d57861da63090769a479d2f9bfcbe.jpg" alt="6"><span>Caption 6</span></div>
-    <div class="gallery-item"><img src="https://i.pinimg.com/736x/fa/71/ba/fa71ba7486c9e901cec5d22a46b27605.jpg" alt="7"><span>Caption 7</span></div>
-    <div class="gallery-item"><img src="https://i.pinimg.com/1200x/2b/d9/d7/2bd9d77f319d1e5fee827f50517ee04f.jpg    " alt="8"><span>Caption 8</span></div>
-    <div class="gallery-item"><img src="https://i.pinimg.com/736x/e2/78/6f/e2786f3a6932ec738a3abca24afb4842.jpg" alt="9"><span>Caption 9</span></div>
-  </section>
-
-  <section class="portfolio">
-    <header class="portfolio-header">
-      <div class="logo">Portfolio</div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="portfolio-grid">
-      <div class="projects">
-        <div class="project-card">
-          <h3>Project 1</h3>
-          <p>A short description of the project</p>
-          <button>View</button>
+<div class="container-fluid mt-4">
+  <div class="row">
+    <div class="col-lg-8 col-md-12">
+      <h2 class="mb-4 text-center">Hello!</h2>
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <img src="https://i.pinimg.com/originals/aa/4b/86/aa4b86b44c1069317bed30059d91aaae.gif">
+          </div>
         </div>
-        <div class="project-card">
-          <h3>Project 2</h3>
-          <p>Another description here</p>
-          <button>View</button>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <img src="https://i.pinimg.com/originals/aa/4b/86/aa4b86b44c1069317bed30059d91aaae.gif">
+
+          </div>
         </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <img src="https://i.pinimg.com/originals/aa/4b/86/aa4b86b44c1069317bed30059d91aaae.gif" >
+            
+          </div>
+          
+        </div>
+        
       </div>
-      <aside class="portfolio-sidebar">
-        <h3>About Me</h3>
-        <p>Some info about me</p>
-      </aside>
+      <div class="text-center mt-4 mb-5">
+            <p style="max-width: 700px; margin: 10px auto; font-size: 16px;">Sorry, I don't have any projects right now</p>
+            
+          </div>
     </div>
+    <div class="col-lg-4 col-md-12 sidebar">
+      <h4>About Me</h4>
+      <p>I’m <strong>Sofiya Akhmadishina</strong>, a Computer Science student at AITU.
+         I enjoy web design, playing games, and sleep.</p>
+      <p><b>Email:</b> 240226@astanait.edu.kz</p>
+      <p><b>Location:</b> Astana, Kazakhstan</p>
+    </div>
+  </div>
+</div>
 
-    <footer class="portfolio-footer">© 2025 My Page</footer>
-  </section>
+<footer>© 2025 Sofiya Akhmadishina</footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
