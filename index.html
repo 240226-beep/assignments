@@ -1,83 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sofiya's Page</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🔥 Fire of Civilization</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <div class="main-container">
+    <!-- LEFT: GAME -->
+    <div class="game-area">
+      <h1>🔥 Fire of Civilization 🔥</h1>
+      <p class="era">Era: Prehistoric</p>
+      <p class="flame-points">🔥 Flame Points: <span id="flamePoints">0</span></p>
 
+      <!-- Fire button with fire.gif background -->
+      <button id="fireButton" class="fire-button" aria-label="Keep the fire alive"></button>
 
-  <div class="site-nav">
-    <a href="index.html">Main</a>
-    <a href="typography.html">Typography</a>
-    <a href="layout.html">Layout</a>
-    <a href="bootstrap-grid.html">Grid</a>
-    <a href="navbar.html">Navbar</a>
-  </div>
+      <!-- Flame health -->
+      <div class="flame-bar"><div id="flameLevel"></div></div>
+      <p id="flameText">Flame: 100%</p>
 
+      <!-- Progress to next era -->
+      <div class="era-progress"><div id="eraProgress"></div></div>
+      <p id="eraGoalText">Next Era Progress: 0%</p>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Sofiya's Portfolio</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Welcome</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-      </ul>
+      <p class="message" id="message"></p>
+      <p class="clicks-total">🖱️ Total Clicks: <span id="clicksCount">0</span></p>
+    </div>
+
+    <!-- RIGHT: SHOP -->
+    <div class="shop-area">
+      <h2>Upgrades (max 3 types / 5 buys each)</h2>
+      <p class="shop-era-theme" id="shopTheme"></p>
+      <div id="shopList" class="shop-list"></div>
     </div>
   </div>
-</nav>
 
+  <!-- Sounds -->
+  <audio id="clickSound" src="https://cdn.pixabay.com/download/audio/2021/09/01/audio_17e88a6de9.mp3?filename=fire-crackle-1.mp3"></audio>
+  <audio id="upgradeSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_5296f76445.mp3?filename=success-1.mp3"></audio>
+  <audio id="newEraSound" src="https://cdn.pixabay.com/download/audio/2023/04/10/audio_4d1e038efb.mp3?filename=magic-transition-1.mp3"></audio>
 
-<div class="container-fluid mt-4">
-  <div class="row">
-    <div class="col-lg-8 col-md-12">
-      <h2 class="mb-4 text-center">Hello!</h2>
-      <div class="row">
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card">
-            <img src="https://i.pinimg.com/originals/aa/4b/86/aa4b86b44c1069317bed30059d91aaae.gif">
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card">
-            <img src="https://i.pinimg.com/originals/aa/4b/86/aa4b86b44c1069317bed30059d91aaae.gif">
-
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card">
-            <img src="https://i.pinimg.com/originals/aa/4b/86/aa4b86b44c1069317bed30059d91aaae.gif" >
-            
-          </div>
-          
-        </div>
-        
-      </div>
-      <div class="text-center mt-4 mb-5">
-            <p style="max-width: 700px; margin: 10px auto; font-size: 16px;">Sorry, I don't have any projects right now</p>
-            
-          </div>
-    </div>
-    <div class="col-lg-4 col-md-12 sidebar">
-      <h4>About Me</h4>
-      <p>I’m <strong>Sofiya Akhmadishina</strong>, a Computer Science student at AITU.
-         I enjoy web design, playing games, and sleep.</p>
-      <p><b>Email:</b> 240226@astanait.edu.kz</p>
-      <p><b>Location:</b> Astana, Kazakhstan</p>
-    </div>
-  </div>
-</div>
-
-<footer>© 2025 Sofiya Akhmadishina</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
