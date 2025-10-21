@@ -1,0 +1,107 @@
+:root{
+  --glass-dark: rgba(0,0,0,.75);
+  --glass-mid: rgba(0,0,0,.4);
+  --gold: #ffcc66;
+  --orange: #ff8800;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Segoe UI",system-ui,Arial,sans-serif;
+  color:#fff;
+  background:url("1.png") center center / cover no-repeat fixed;
+  height:100vh;
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  transition:background 1s ease;
+  overflow:hidden;
+}
+.main-container{display:contents}
+
+/* LEFT */
+.game-area{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  background:var(--glass-mid);
+  padding:20px;
+  backdrop-filter: blur(4px);
+}
+h1{color:orange;text-shadow:0 0 10px var(--orange);margin:6px 0 10px}
+.era,.flame-points{
+  font-weight:700;color:var(--gold);
+  text-shadow:0 0 5px #ffaa00;margin:0 0 8px
+}
+
+/* Fire button with GIF */
+.fire-button{
+  width:220px;height:220px;border-radius:50%;
+  border:2px solid rgba(255,255,255,.35);
+  background: url("fire.gif") center center / cover no-repeat;
+  box-shadow: 0 0 25px rgba(255,140,0,.6), inset 0 0 15px rgba(255,200,0,.4);
+  cursor:pointer;
+  transition: transform .08s ease, box-shadow .2s ease;
+}
+.fire-button:active{
+  transform: scale(1.08);
+  box-shadow: 0 0 40px rgba(255,160,0,.8), inset 0 0 22px rgba(255,220,0,.55);
+}
+
+/* Floating +1 */
+.float-text{
+  position:fixed;
+  color:#ff9933;font-weight:700;font-size:22px;pointer-events:none;
+  text-shadow:0 0 5px #ff6600;animation:floatUp 1s ease-out forwards
+}
+@keyframes floatUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-60px)}}
+
+/* Flame health & Era progress */
+.flame-bar, .era-progress{
+  width:80%;border-radius:14px;margin:12px 0;overflow:hidden;
+  box-shadow:inset 0 0 10px #000
+}
+.flame-bar{height:26px;background:#222}
+#flameLevel{height:100%;width:100%;background:linear-gradient(to right,#ff5500,#ffaa00);transition:width .3s}
+.era-progress{height:20px;background:#333}
+#eraProgress{height:100%;width:0;background:linear-gradient(to right,#66ff99,#00cc66);transition:width .35s}
+
+#eraGoalText,#flameText{margin:6px 0 4px}
+
+/* Bottom-left clicks */
+.clicks-total{
+  position:absolute;bottom:10px;left:14px;font-weight:700;
+  color:#ffd580;text-shadow:0 0 6px #ff9900;margin:0
+}
+
+/* RIGHT: Shop */
+.shop-area{
+  background:var(--glass-dark);
+  padding:22px 18px;overflow-y:auto;
+  box-shadow:-4px 0 10px rgba(0,0,0,.6)
+}
+.shop-area h2{margin:6px 0 6px;color:#ffa733;text-align:center}
+.shop-era-theme{opacity:.9;margin:0 0 12px;text-align:center}
+
+.shop-list{display:flex;flex-direction:column;gap:10px}
+.upgrade{
+  display:flex;gap:10px;align-items:flex-start;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.25);
+  border-radius:10px;padding:10px 12px
+}
+.upg-icon{font-size:22px;line-height:1.2}
+.upg-body{flex:1}
+.upg-title{margin:0;font-weight:700}
+.upg-desc{margin:4px 0 8px;opacity:.9;font-size:.95rem}
+.upg-bottom{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.upg-meta{opacity:.9;font-size:.9rem}
+.upg-buy{
+  padding:8px 12px;border-radius:8px;border:1px solid rgba(255,255,255,.35);
+  background:rgba(255,255,255,.15);color:#ffb347;font-weight:700;cursor:pointer;transition:.25s
+}
+.upg-buy:hover{background:rgba(255,255,255,.25)}
+.upg-buy:disabled{opacity:.5;cursor:not-allowed}
+
+.message{min-height:28px;margin:6px 0 0;color:var(--gold);font-weight:600}

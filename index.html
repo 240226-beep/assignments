@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🔥 Fire of Civilization</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="main-container">
+    <!-- LEFT: GAME -->
+    <div class="game-area">
+      <h1>🔥 Fire of Civilization 🔥</h1>
+      <p class="era">Era: Prehistoric</p>
+      <p class="flame-points">🔥 Flame Points: <span id="flamePoints">0</span></p>
+
+      <!-- Fire button with fire.gif background -->
+      <button id="fireButton" class="fire-button" aria-label="Keep the fire alive"></button>
+
+      <!-- Flame health -->
+      <div class="flame-bar"><div id="flameLevel"></div></div>
+      <p id="flameText">Flame: 100%</p>
+
+      <!-- Progress to next era -->
+      <div class="era-progress"><div id="eraProgress"></div></div>
+      <p id="eraGoalText">Next Era Progress: 0%</p>
+
+      <p class="message" id="message"></p>
+      <p class="clicks-total">🖱️ Total Clicks: <span id="clicksCount">0</span></p>
+    </div>
+
+    <!-- RIGHT: SHOP -->
+    <div class="shop-area">
+      <h2>Upgrades (max 3 types / 5 buys each)</h2>
+      <p class="shop-era-theme" id="shopTheme"></p>
+      <div id="shopList" class="shop-list"></div>
+    </div>
+  </div>
+
+  <!-- Sounds -->
+  <audio id="clickSound" src="https://cdn.pixabay.com/download/audio/2021/09/01/audio_17e88a6de9.mp3?filename=fire-crackle-1.mp3"></audio>
+  <audio id="upgradeSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_5296f76445.mp3?filename=success-1.mp3"></audio>
+  <audio id="newEraSound" src="https://cdn.pixabay.com/download/audio/2023/04/10/audio_4d1e038efb.mp3?filename=magic-transition-1.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
